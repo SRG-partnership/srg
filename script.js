@@ -24,13 +24,11 @@ function makeDraggable(evt) {
     }
   
     function drag(evt) {
-        console.log("Drag!");
         if (selectedElement) {
             evt.preventDefault();
-            var dragX = evt.clientX;
-            var dragY = evt.clientY;
-            selectedElement.setAttributeNS(null, "x", dragX);
-            selectedElement.setAttributeNS(null, "y", dragY);
+            var coord = getMousePosition(evt);
+            selectedElement.setAttributeNS(null, "x", coord.x);
+            selectedElement.setAttributeNS(null, "y", coord.y);
           }
     }
   
@@ -38,4 +36,12 @@ function makeDraggable(evt) {
         console.log("Drop!");
         selectedElement = null;
     }
+  }
+
+  function getMousePosition(evt) {
+    var CTM = svg.getScreenCTM();
+    return {
+      x: (evt.clientX - CTM.e) / CTM.a,
+      y: (evt.clientY - CTM.f) / CTM.d
+    };
   }
