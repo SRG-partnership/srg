@@ -1,4 +1,13 @@
 /* Split the screen in half */
+.draggable {
+    cursor: move;
+}
+
+.static {
+    cursor: not-allowed;
+}
+
+
 .split {
     height: 100%;
     /*width: 50%;*/
