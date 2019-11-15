@@ -15,11 +15,14 @@ function makeDraggable(evt) {
     svg.addEventListener('mouseleave', endDrag);
   
     function startDrag(evt) {
+        console.log("Start!");
     }
   
     function drag(evt) {
+        console.log("Drag!");
     }
   
     function endDrag(evt) {
+        console.log("Drop!");
     }
   }
