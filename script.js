@@ -6,3 +6,20 @@ function plusButton() {
 function dblClick(){
     console.log("That's double click!")
 }
+
+function makeDraggable(evt) {
+    var svg = evt.target;
+    svg.addEventListener('mousedown', startDrag);
+    svg.addEventListener('mousemove', drag);
+    svg.addEventListener('mouseup', endDrag);
+    svg.addEventListener('mouseleave', endDrag);
+  
+    function startDrag(evt) {
+    }
+  
+    function drag(evt) {
+    }
+  
+    function endDrag(evt) {
+    }
+  }
