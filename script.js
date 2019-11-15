@@ -27,8 +27,10 @@ function makeDraggable(evt) {
         console.log("Drag!");
         if (selectedElement) {
             evt.preventDefault();
-            var x = parseFloat(selectedElement.getAttributeNS(null, "x"));
-            selectedElement.setAttributeNS(null, "x", x + 0.1);
+            var dragX = evt.clientX;
+            var dragY = evt.clientY;
+            selectedElement.setAttributeNS(null, "x", dragX);
+            selectedElement.setAttributeNS(null, "y", dragY);
           }
     }
   
