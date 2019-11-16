@@ -5,7 +5,7 @@ function plusButton() {
 
 function dblClick(){
     console.log("That's double click!");
-    var svg = document.getElementsByTagName('canvas')[0]; //Get svg element
+    var svg = document.getElementById("canvas"); //Get svg element
     var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'rect'); //Create a path in SVG's namespace
     newElement.setAttribute ("width", "3");
     newElement.setAttribute ("height", "4");
