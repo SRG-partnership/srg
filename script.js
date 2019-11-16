@@ -36,12 +36,12 @@ function makeDraggable(evt) {
         console.log("Drop!");
         selectedElement = null;
     }
-  }
 
-  function getMousePosition(evt) {
-    var CTM = svg.getScreenCTM();
-    return {
-      x: (evt.clientX - CTM.e) / CTM.a,
-      y: (evt.clientY - CTM.f) / CTM.d
-    };
+    function getMousePosition(evt) {
+        var CTM = svg.getScreenCTM();
+        return {
+          x: (evt.clientX - CTM.e) / CTM.a,
+          y: (evt.clientY - CTM.f) / CTM.d
+        };
+      }
   }
