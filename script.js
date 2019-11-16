@@ -6,7 +6,7 @@ function plusButton() {
 function dblClick(){
     console.log("That's double click!");
     var node = document.createElement("rect");
-    node.setAttribute("class", "grabbable");
+    node.setAttribute("class", "draggable");
     node.setAttribute("x", "1");
     node.setAttribute("y", "1");
     node.setAttribute("width", "4");
