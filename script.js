@@ -12,6 +12,7 @@ function dblClick(){
     node.setAttribute("width", "8");
     node.setAttribute("height", "10");
     node.setAttribute("fill", "#f15640");
+    document.getElementById("canvas").appendChild(node);
 }
 
 var selectedElement = false;
