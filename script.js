@@ -30,8 +30,8 @@ function makeDraggable(evt) {
         if (selectedElement) {
             evt.preventDefault();
             var coord = getMousePosition(evt);
-            selectedElement.setAttributeNS(null, "x", coord.x);
-            selectedElement.setAttributeNS(null, "y", coord.y);
+            selectedElement.setAttributeNS(null, "x", coord.x - offset.x);
+            selectedElement.setAttributeNS(null, "y", coord.y - offset.y);
           }
     }
   
