@@ -5,14 +5,14 @@ function plusButton() {
 
 function dblClick(){
     console.log("That's double click!");
-    var node = document.createElement("rect");
-    node.setAttribute("class", "draggable");
-    node.setAttribute("x", "1");
-    node.setAttribute("y", "1");
-    node.setAttribute("width", "4");
-    node.setAttribute("height", "5");
-    node.setAttribute("fill", "#f15640");
-    document.getElementById("canvas").appendChild(node);
+    var svg = document.getElementsByTagName('canvas')[0]; //Get svg element
+    var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'rect'); //Create a path in SVG's namespace
+    newElement.style.width = "4";
+    newElement.style.height = "6";
+    newElement.style.x = "2";
+    newElement.style.y = "5";
+    newElement.style.fill = "#f15640";
+    svg.appendChild(newElement);
 }
 
 var selectedElement = false;
