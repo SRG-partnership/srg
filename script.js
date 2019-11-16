@@ -4,7 +4,14 @@ function plusButton() {
    }
 
 function dblClick(){
-    console.log("That's double click!")
+    console.log("That's double click!");
+    var node = document.createElement("rect");
+    node.setAttribute("class", "grabbable");
+    node.setAttribute("x", "10");
+    node.setAttribute("y", "10");
+    node.setAttribute("width", "8");
+    node.setAttribute("height", "10");
+    node.setAttribute("fill", "#f15640");
 }
 
 var selectedElement = false;
