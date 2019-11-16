@@ -7,10 +7,10 @@ function dblClick(){
     console.log("That's double click!");
     var node = document.createElement("rect");
     node.setAttribute("class", "grabbable");
-    node.setAttribute("x", "10");
-    node.setAttribute("y", "10");
-    node.setAttribute("width", "8");
-    node.setAttribute("height", "10");
+    node.setAttribute("x", "1");
+    node.setAttribute("y", "1");
+    node.setAttribute("width", "4");
+    node.setAttribute("height", "5");
     node.setAttribute("fill", "#f15640");
     document.getElementById("canvas").appendChild(node);
 }
