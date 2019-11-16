@@ -20,6 +20,9 @@ function makeDraggable(evt) {
         console.log("Start!");
         if (evt.target.classList.contains('draggable')) {
             selectedElement = evt.target;
+            offset = getMousePosition(evt);
+            offset.x -= parseFloat(selectedElement.getAttributeNS(null, "x"));
+            offset.y -= parseFloat(selectedElement.getAttributeNS(null, "y"));
           }
     }
   
