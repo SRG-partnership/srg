@@ -1,9 +1,9 @@
 function plusButton() {
     document.getElementById("demo").innerHTML = "Paragraph changed.";
-    console.log("This is it!")
-   }
+    console.log("This is it!")   
+}
 
-var svg = document.getElementById("canvas");
+const svg = document.getElementById("canvas");
 
 function dblClick(){
    // var svg = document.getElementById("svgImage"); //Get svg element
@@ -68,7 +68,7 @@ function makeDraggable(evt) {
 //const svgImage = document.getElementById("canvas");
 const svgContainer = document.getElementById("svgContainer");
 
-console.log("svgImage");
+console.log(svg);
 
 var viewBox = {x:0,y:0,w:300,h:200};
 svg.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
@@ -91,7 +91,7 @@ svgContainer.onmousewheel = function(e) {
    viewBox = {x:viewBox.x+dx,y:viewBox.y+dy,w:viewBox.w-dw,h:viewBox.h-dh};
    scale = svgSize.w/viewBox.w;
    zoomValue.innerText = `${Math.round(scale*100)/100}`;
-   svgImage.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
+   svg.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
 }
 
 
@@ -106,7 +106,7 @@ svgContainer.onmousemove = function(e){
   var dx = (startPoint.x - endPoint.x)/scale;
   var dy = (startPoint.y - endPoint.y)/scale;
   var movedViewBox = {x:viewBox.x+dx,y:viewBox.y+dy,w:viewBox.w,h:viewBox.h};
-  svgImage.setAttribute('viewBox', `${movedViewBox.x} ${movedViewBox.y} ${movedViewBox.w} ${movedViewBox.h}`);
+  svg.setAttribute('viewBox', `${movedViewBox.x} ${movedViewBox.y} ${movedViewBox.w} ${movedViewBox.h}`);
    }
 }
 
@@ -116,7 +116,7 @@ svgContainer.onmouseup = function(e){
   var dx = (startPoint.x - endPoint.x)/scale;
   var dy = (startPoint.y - endPoint.y)/scale;
   viewBox = {x:viewBox.x+dx,y:viewBox.y+dy,w:viewBox.w,h:viewBox.h};
-  svgImage.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
+  svg.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
   isPanning = false;
    }
 }
