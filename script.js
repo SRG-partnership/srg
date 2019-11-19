@@ -6,7 +6,7 @@ function plusButton() {
 const svgImage = document.getElementById("canvas");
 
 function dblClick(){
-   // var svg = document.getElementById("svgImage"); //Get svg element
+   var svg = document.getElementById("canvas"); //Get svg element
     var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'rect'); //Create a path in SVG's namespace
     var colInput = document.getElementById("forma").getElementsByClassName("color");
     var theColor = colInput[0].value;
@@ -18,7 +18,7 @@ function dblClick(){
     newElement.setAttribute ("y", "2");
     newElement.setAttribute ("fill", theColor);
     newElement.setAttribute ("fill-opacity", "0.5");
-    svgImage.appendChild(newElement);
+    svg.appendChild(newElement);
 }
 
 var selectedElement = false;
