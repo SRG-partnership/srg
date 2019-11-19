@@ -91,7 +91,7 @@ svgContainer.onmousewheel = function(e) {
    viewBox = {x:viewBox.x+dx,y:viewBox.y+dy,w:viewBox.w-dw,h:viewBox.h-dh};
    scale = svgSize.w/viewBox.w;
    zoomValue.innerText = `${Math.round(scale*100)/100}`;
-   svg.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
+   svgImage.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
 }
 
 
@@ -106,7 +106,7 @@ svgContainer.onmousemove = function(e){
   var dx = (startPoint.x - endPoint.x)/scale;
   var dy = (startPoint.y - endPoint.y)/scale;
   var movedViewBox = {x:viewBox.x+dx,y:viewBox.y+dy,w:viewBox.w,h:viewBox.h};
-  svg.setAttribute('viewBox', `${movedViewBox.x} ${movedViewBox.y} ${movedViewBox.w} ${movedViewBox.h}`);
+  svgImage.setAttribute('viewBox', `${movedViewBox.x} ${movedViewBox.y} ${movedViewBox.w} ${movedViewBox.h}`);
    }
 }
 
@@ -116,7 +116,7 @@ svgContainer.onmouseup = function(e){
   var dx = (startPoint.x - endPoint.x)/scale;
   var dy = (startPoint.y - endPoint.y)/scale;
   viewBox = {x:viewBox.x+dx,y:viewBox.y+dy,w:viewBox.w,h:viewBox.h};
-  svg.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
+  svgImage.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
   isPanning = false;
    }
 }
