@@ -71,7 +71,7 @@ const svgContainer = document.getElementById("svgContainer");
 console.log(svgImage);
 
 var viewBox = {x:0,y:0,w:300,h:200};
-svgImage.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
+svgImage.setAttribute('viewBox', `0 0 30 20`);
 const svgSize = {w:300,h:200};
 var isPanning = false;
 var startPoint = {x:0,y:0};
