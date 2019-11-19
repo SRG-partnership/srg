@@ -3,8 +3,10 @@ function plusButton() {
     console.log("This is it!")
    }
 
+var svg = document.getElementById("canvas");
+
 function dblClick(){
-    var svg = document.getElementById("svgImage"); //Get svg element
+   // var svg = document.getElementById("svgImage"); //Get svg element
     var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'rect'); //Create a path in SVG's namespace
     var colInput = document.getElementById("forma").getElementsByClassName("color");
     var theColor = colInput[0].value;
@@ -63,13 +65,13 @@ function makeDraggable(evt) {
 
 //custom zoom/////////////////////////////////////////////////////////////////////////////////
 
-const svgImage = document.getElementById("svgImage");
+//const svgImage = document.getElementById("canvas");
 const svgContainer = document.getElementById("svgContainer");
 
 console.log("svgImage");
 
 var viewBox = {x:0,y:0,w:300,h:200};
-svgImage.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
+svg.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
 const svgSize = {w:300,h:200};
 var isPanning = false;
 var startPoint = {x:0,y:0};
