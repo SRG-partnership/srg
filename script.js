@@ -18,7 +18,7 @@ function dblClick(){
     newElement.setAttribute ("y", "2");
     newElement.setAttribute ("fill", theColor);
     newElement.setAttribute ("fill-opacity", "0.5");
-    svg.appendChild(newElement);
+    svgImage.appendChild(newElement);
 }
 
 var selectedElement = false;
