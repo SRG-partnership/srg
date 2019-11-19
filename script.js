@@ -4,7 +4,7 @@ function plusButton() {
    }
 
 function dblClick(){
-    var svg = document.getElementById("canvas"); //Get svg element
+    var svg = document.getElementById("svgImage"); //Get svg element
     var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'rect'); //Create a path in SVG's namespace
     var colInput = document.getElementById("forma").getElementsByClassName("color");
     var theColor = colInput[0].value;
@@ -63,7 +63,7 @@ function makeDraggable(evt) {
 
 //custom zoom//
 
-const svgImage = document.getElementById("canvas");
+const svgImage = document.getElementById("svgImage");
 const svgContainer = document.getElementById("svgContainer");
 
 var viewBox = {x:0,y:0,w:svgImage.getAttribute("width"),h:svgImage.getAttribute("height")};
