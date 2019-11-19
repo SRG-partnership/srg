@@ -63,6 +63,9 @@ function makeDraggable(evt) {
       }
   }
 
+  const svgContainer = document.getElementById("svgContainer");
+  console.log(svgContainer);
+
 //custom zoom/////////////////////////////////////////////////////////////////////////////////
 
 //const svgImage = document.getElementById("canvas");
