@@ -68,7 +68,7 @@ function makeDraggable(evt) {
 //const svgImage = document.getElementById("canvas");
 const svgContainer = document.getElementById("svgContainer");
 
-console.log(svg);
+console.log(svgImage);
 
 var viewBox = {x:0,y:0,w:300,h:200};
 svgImage.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
