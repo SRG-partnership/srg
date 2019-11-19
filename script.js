@@ -3,7 +3,7 @@ function plusButton() {
     console.log("This is it!")   
 }
 
-const svg = document.getElementById("canvas");
+const svgImage = document.getElementById("canvas");
 
 function dblClick(){
    // var svg = document.getElementById("svgImage"); //Get svg element
@@ -71,7 +71,7 @@ const svgContainer = document.getElementById("svgContainer");
 console.log(svg);
 
 var viewBox = {x:0,y:0,w:300,h:200};
-svg.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
+svgImage.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
 const svgSize = {w:300,h:200};
 var isPanning = false;
 var startPoint = {x:0,y:0};
