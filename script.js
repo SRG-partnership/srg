@@ -4,14 +4,17 @@ function plusButton() {
    }
 
 function dblClick(){
-    console.log("That's double click!");
     var svg = document.getElementById("canvas"); //Get svg element
     var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'rect'); //Create a path in SVG's namespace
+    var colInput = document.getElementById("colorPicker");
+    var theColor = colInput.nodeValue;
+    console.log(theColor);
     newElement.setAttribute ("width", "3");
     newElement.setAttribute ("height", "4");
     newElement.setAttribute ("class", "draggable");
     newElement.setAttribute ("x", "3");
     newElement.setAttribute ("y", "2");
+    newElement.setAttribute ("fill", "#32a89d");
     svg.appendChild(newElement);
 }
 
