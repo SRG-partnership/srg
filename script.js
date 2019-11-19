@@ -70,7 +70,7 @@ console.log("svgImage");
 
 var viewBox = {x:0,y:0,w:300,h:200};
 svgImage.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
-const svgSize = {w:svgImage.getAttribute("width"),h:svgImage.getAttribute("height")};
+const svgSize = {w:300,h:200};
 var isPanning = false;
 var startPoint = {x:0,y:0};
 var endPoint = {x:0,y:0};;
