@@ -7,14 +7,15 @@ function dblClick(){
     var svg = document.getElementById("canvas"); //Get svg element
     var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'rect'); //Create a path in SVG's namespace
     var colInput = document.getElementById("forma").getElementsByClassName("color");
-    var theColor = colInput.nodeValue;
+    var theColor = colInput[0].value;
     console.log(colInput[0].value);
     newElement.setAttribute ("width", "3");
     newElement.setAttribute ("height", "4");
     newElement.setAttribute ("class", "draggable");
     newElement.setAttribute ("x", "3");
     newElement.setAttribute ("y", "2");
-    newElement.setAttribute ("fill", "#32a89d");
+    newElement.setAttribute ("fill", theColor);
+    newElement.setAttribute ("fill-opacity", "0.5");
     svg.appendChild(newElement);
 }
 
