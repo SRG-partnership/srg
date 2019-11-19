@@ -66,6 +66,8 @@ function makeDraggable(evt) {
 //custom zoom/////////////////////////////////////////////////////////////////////////////////
 
 //const svgImage = document.getElementById("canvas");
+
+/*
 const svgContainer = document.getElementById("svgContainer");
 
 console.log(svgImage);
@@ -124,3 +126,4 @@ svgContainer.onmouseup = function(e){
 svgContainer.onmouseleave = function(e){
  isPanning = false;
 }
+*/
