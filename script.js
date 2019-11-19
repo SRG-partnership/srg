@@ -6,7 +6,7 @@ function plusButton() {
 function dblClick(){
     var svg = document.getElementById("canvas"); //Get svg element
     var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'rect'); //Create a path in SVG's namespace
-    var colInput = document.getElementById("colorPicker").nodeValue;
+    var colInput = document.getElementById("colorPicker");
     var theColor = colInput.nodeValue;
     console.log(colInput);
     newElement.setAttribute ("width", "3");
