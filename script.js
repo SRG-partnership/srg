@@ -65,7 +65,7 @@ function makeDraggable(evt) {
 
 //custom zoom/////////////////////////////////////////////////////////////////////////////////
 
-const svgImage = document.getElementById("canvas");
+//const svgImage = document.getElementById("canvas");
 const svgContainer = document.getElementById("svgContainer");
 
 console.log(svgImage);
