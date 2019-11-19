@@ -61,10 +61,12 @@ function makeDraggable(evt) {
       }
   }
 
-//custom zoom//
+//custom zoom/////////////////////////////////////////////////////////////////////////////////
 
 const svgImage = document.getElementById("svgImage");
 const svgContainer = document.getElementById("svgContainer");
+
+log.console("svgImage");
 
 var viewBox = {x:0,y:0,w:svgImage.getAttribute("width"),h:svgImage.getAttribute("height")};
 svgImage.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
