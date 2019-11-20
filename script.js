@@ -38,6 +38,9 @@ function makeDraggable(evt) {
             offset.x -= parseFloat(selectedElement.getAttributeNS(null, "x"));
             offset.y -= parseFloat(selectedElement.getAttributeNS(null, "y"));
           }
+        else if (evt.target.classList.contains('canvas')){
+            console.log("panning");
+        }
     }
   
     function drag(evt) {
