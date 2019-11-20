@@ -88,8 +88,9 @@ function navIn(){
 
 function navOut(){
   console.log("Zooming Out");
-  var box = document.getElementById("canvas").getAttribute('viewBox')[0];
-  console.log(box);
+  var svgCanvas = document.getElementById("canvas");
+  var boxZoom = svgCanvas.getAttribute('viewBox')[2];
+  console.log(boxZoom);
 }
 
 //custom zoom/////////////////////////////////////////////////////////////////////////////////
