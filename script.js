@@ -83,10 +83,12 @@ function zoom(){
 
 function navIn(){
   console.log("Zooming In");
+  console.log(svgImage);
 }
 
 function navOut(){
   console.log("Zooming Out");
+  console.log(svgImage);
 }
 
 //custom zoom/////////////////////////////////////////////////////////////////////////////////
