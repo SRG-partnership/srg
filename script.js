@@ -39,7 +39,12 @@ function makeDraggable(evt) {
             offset.y -= parseFloat(selectedElement.getAttributeNS(null, "y"));
           }
         else if (evt.target.classList.contains('canvas')){
-            console.log("panning");
+            console.log("Start panning");
+            selectedElement = evt.target;
+            offset = getMousePosition(evt);
+            offset.x -= parseFloat(selectedElement.getAttributeNS(null, "x"));
+            offset.y -= parseFloat(selectedElement.getAttributeNS(null, "y"));
+
         }
     }
   
@@ -51,7 +56,6 @@ function makeDraggable(evt) {
             selectedElement.setAttributeNS(null, "y", coord.y - offset.y);
           }
         else {
-            console.log("PAN!");
 
           }
     }
