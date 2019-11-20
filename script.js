@@ -47,6 +47,9 @@ function makeDraggable(evt) {
             selectedElement.setAttributeNS(null, "x", coord.x - offset.x);
             selectedElement.setAttributeNS(null, "y", coord.y - offset.y);
           }
+          else{
+              console.log("PAN!");
+          }
     }
   
     function endDrag(evt) {
