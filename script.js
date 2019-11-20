@@ -38,7 +38,6 @@ function makeDraggable(evt) {
             offset.x -= parseFloat(selectedElement.getAttributeNS(null, "x"));
             offset.y -= parseFloat(selectedElement.getAttributeNS(null, "y"));
           }
-        }
     }
   
     function drag(evt) {
@@ -50,10 +49,7 @@ function makeDraggable(evt) {
           }
         else {
             console.log("PAN!");
-            evt.preventDefault();
-            var coord = getMousePosition(evt);
-            document.getElementById("canvas").setAttributeNS(null, "x", coord.x - offset.x);
-            document.getElementById("canvas").setAttributeNS(null, "y", coord.y - offset.y);
+
           }
     }
   
