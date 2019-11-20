@@ -93,7 +93,7 @@ function navOut(){
   var zoomed = boxZoom[2];
   var viewParams = {x:boxZoom[0], y:boxZoom[1], w:zoomed, h:zoomed}
   svgCanvas.setAttribute('viewBox', 'boxZoom[0] boxZoom[1] zoomed[2]' );
-  console.log(boxZoom);
+  console.log(boxZoom[1]);
 }
 
 //custom zoom/////////////////////////////////////////////////////////////////////////////////
