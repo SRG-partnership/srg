@@ -64,10 +64,10 @@ function makeDraggable(evt) {
   }
 
 
-function makeZoomable(){
+function zoom(){
     console.log("Zoomed");
 
-    
+
 }
 
 //custom zoom/////////////////////////////////////////////////////////////////////////////////
