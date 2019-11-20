@@ -47,8 +47,12 @@ function makeDraggable(evt) {
             selectedElement.setAttributeNS(null, "x", coord.x - offset.x);
             selectedElement.setAttributeNS(null, "y", coord.y - offset.y);
           }
-          else{
-              console.log("PAN!");
+        else {
+            console.log("PAN!");
+            evt.preventDefault();
+            var coord = getMousePosition(evt);
+            svgImage.setAttributeNS(null, "x", coord.x - offset.x);
+            svgImage.setAttributeNS(null, "y", coord.y - offset.y);
           }
     }
   
