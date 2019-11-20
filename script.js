@@ -90,7 +90,7 @@ function navOut(){
   console.log("Zooming Out");
   var svgCanvas = document.getElementById("canvas");
   var boxZoom = svgCanvas.getAttribute('viewBox');
-  var zoomed = boxZoom[2] + 1;
+  var zoomed = boxZoom[2];
   var viewParams = {x:boxZoom[0], y:boxZoom[1], w:zoomed, h:zoomed}
   svgCanvas.setAttribute('viewBox', viewParams );
   console.log(zoomed);
