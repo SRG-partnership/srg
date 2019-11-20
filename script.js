@@ -63,8 +63,12 @@ function makeDraggable(evt) {
       }
   }
 
-  const svgContainer = document.getElementById("svgContainer");
-  console.log(svgContainer);
+
+function makeZoomable(){
+    console.log("Zoomed");
+
+    
+}
 
 //custom zoom/////////////////////////////////////////////////////////////////////////////////
 
