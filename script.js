@@ -81,6 +81,14 @@ function zoom(){
 
 }
 
+function navIn(){
+  console.log("Zooming In");
+}
+
+function navOut(){
+  console.log("Zooming Out");
+}
+
 //custom zoom/////////////////////////////////////////////////////////////////////////////////
 
 //const svgImage = document.getElementById("canvas");
