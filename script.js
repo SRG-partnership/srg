@@ -38,12 +38,6 @@ function makeDraggable(evt) {
             offset.x -= parseFloat(selectedElement.getAttributeNS(null, "x"));
             offset.y -= parseFloat(selectedElement.getAttributeNS(null, "y"));
           }
-        else {
-            selectedElement = evt;
-            offset = getMousePosition(evt);
-            offset.x -= parseFloat(selectedElement.getAttributeNS(null, "x"));
-            offset.y -= parseFloat(selectedElement.getAttributeNS(null, "y"));
-        }
         }
     }
   
