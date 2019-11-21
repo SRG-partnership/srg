@@ -82,23 +82,53 @@ function zoom(){
 }
 
 function navIn(){
-  console.log("Zooming In");
-  console.log(document.getElementById("canvas"));
+  var svgCanvas = document.getElementById("canvas");
+  var boxZoom = svgCanvas.getAttribute('viewBox').split(/\s+|,/);
+  var zoomed = parseInt(boxZoom[2]) - 1;
+  boxZoom[2]=zoomed;
+  boxZoom[3]=zoomed;
+  svgCanvas.setAttribute('viewBox', boxZoom );
 }
 
 function navOut(){
-  console.log("Zooming Out");
   var svgCanvas = document.getElementById("canvas");
   var boxZoom = svgCanvas.getAttribute('viewBox').split(/\s+|,/);
   var zoomed = parseInt(boxZoom[2]) + 1;
   boxZoom[2]=zoomed;
   boxZoom[3]=zoomed;
   svgCanvas.setAttribute('viewBox', boxZoom );
-  console.log(boxZoom);
-  console.log(boxZoom[1]);
-  console.log(boxZoom[2]);
-  console.log(boxZoom[3]);
-  boxZoom = [];
+}
+
+function navLeft(){
+  var svgCanvas = document.getElementById("canvas");
+  var boxZoom = svgCanvas.getAttribute('viewBox').split(/\s+|,/);
+  var zoomed = parseInt(boxZoom[0]) + 1;
+  boxZoom[0]=zoomed;
+  svgCanvas.setAttribute('viewBox', boxZoom );
+}
+
+function navRight(){
+  var svgCanvas = document.getElementById("canvas");
+  var boxZoom = svgCanvas.getAttribute('viewBox').split(/\s+|,/);
+  var zoomed = parseInt(boxZoom[0]) - 1;
+  boxZoom[0]=zoomed;
+  svgCanvas.setAttribute('viewBox', boxZoom );
+}
+
+function navUp(){
+  var svgCanvas = document.getElementById("canvas");
+  var boxZoom = svgCanvas.getAttribute('viewBox').split(/\s+|,/);
+  var zoomed = parseInt(boxZoom[1]) + 1;
+  boxZoom[1]=zoomed;
+  svgCanvas.setAttribute('viewBox', boxZoom );
+}
+
+function navDown(){
+  var svgCanvas = document.getElementById("canvas");
+  var boxZoom = svgCanvas.getAttribute('viewBox').split(/\s+|,/);
+  var zoomed = parseInt(boxZoom[1]) - 1;
+  boxZoom[1]=zoomed;
+  svgCanvas.setAttribute('viewBox', boxZoom );
 }
 
 //custom zoom/////////////////////////////////////////////////////////////////////////////////
