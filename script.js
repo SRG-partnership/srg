@@ -89,11 +89,16 @@ function navIn(){
 function navOut(){
   console.log("Zooming Out");
   var svgCanvas = document.getElementById("canvas");
-  var boxZoom = svgCanvas.getAttribute('viewBox');
-  var zoomed = boxZoom[2];
-  var viewParams = {x:boxZoom[0], y:boxZoom[1], w:zoomed, h:zoomed}
-  svgCanvas.setAttribute('viewBox', 'boxZoom[0] boxZoom[1] zoomed[2]' );
+  var boxZoom = svgCanvas.getAttribute('viewBox').split(/\s+|,/);
+  var zoomed = parseInt(boxZoom[2]) + 1;
+  boxZoom[2]=zoomed;
+  boxZoom[3]=zoomed;
+  svgCanvas.setAttribute('viewBox', boxZoom );
+  console.log(boxZoom);
   console.log(boxZoom[1]);
+  console.log(boxZoom[2]);
+  console.log(boxZoom[3]);
+  boxZoom = [];
 }
 
 //custom zoom/////////////////////////////////////////////////////////////////////////////////
