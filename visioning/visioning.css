@@ -10,7 +10,7 @@
 
 .row{
     align-content: center;
-    margin-left: auto;
+    padding: 3px;
     justify-content: center;
 }
 
