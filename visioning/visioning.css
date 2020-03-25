@@ -5,5 +5,11 @@
 
 .col{
     flex-grow: 0;
-    padding: 5px;
+    padding: 2px;
+}
+
+.row{
+    align-content: center;
+    margin-left: auto;
+    justify-content: center;
 }
