@@ -1,14 +1,26 @@
 
-.card-show {
-    width: 200px;
-    height: 200px;
-
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-.card-hide {
-
+.show {
     width: 200px;
     height: 200px;
+    z-index: 1;
+    
+}
+
+.hide {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    
+
 }
 
 .card{
@@ -17,9 +29,10 @@
 }
 
 .col{
-    flex-grow: 0;
     padding: 1px;
-    display: flex;
+
+    flex-basis: 200px;
+
 
 }
 
