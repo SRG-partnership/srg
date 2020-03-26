@@ -1,3 +1,16 @@
+
+.card-show {
+    width: 200px;
+    height: 200px;
+
+}
+
+.card-hide {
+
+    width: 200px;
+    height: 200px;
+}
+
 .card{
     width: 200px;
     height: 200px;
@@ -5,15 +18,37 @@
 
 .col{
     flex-grow: 0;
-    padding: 2px;
+    padding: 1px;
+    display: flex;
+
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    backface-visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .row{
     align-content: center;
     padding: 3px;
     justify-content: center;
+    display: flex;
+
 }
 
 .container{
     max-width: 1250px;
+}
+
+.body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
