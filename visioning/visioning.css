@@ -1,8 +1,19 @@
 
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+@media (max-width: 1055px){
+    .additional{
+        display: none;
+    }
+
+    .d-xl-block{
+        display: none;
+    }
 }
 
 .show {
@@ -13,7 +24,6 @@
     transition: transform 1s;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    
 }
 
 .hide {
@@ -25,8 +35,6 @@
     transform: rotateY(180deg);
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    
-
 }
 
 .card{
@@ -40,7 +48,8 @@
     flex-basis: 200px;
     width: 200px;
     height: 200px;
-    margin: 1px;
+    margin: 5px;
+    perspective: 1000px
 }
 
 .row{
@@ -49,6 +58,23 @@
     justify-content: center;
     display: flex;
 
+}
+
+.additional {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: orangered;
+}
+
+.d-xl-block {
+    padding: 1px;
+    flex-grow: 0;
+    flex-basis: 200px;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    perspective: 1000px
 }
 
 .container{
