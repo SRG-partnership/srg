@@ -30,10 +30,7 @@
 
 .col{
     padding: 1px;
-
-    flex-basis: 200px;
-
-
+    flex-grow: 0;
 }
 
 .flip-card-back {
