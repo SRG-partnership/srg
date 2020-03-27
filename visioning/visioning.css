@@ -16,12 +16,7 @@
     }
 }
 
-@media (min-width: 1700px){
-    .container{
-        max-width: 1800px;
-        background: red;
-    }
-}
+
 
 .show {
     width: 200px;
@@ -87,7 +82,7 @@
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1800px;
     background-color: currentColor;
 }
 
