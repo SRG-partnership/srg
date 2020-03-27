@@ -16,6 +16,13 @@
     }
 }
 
+@media (min-width: 1700px){
+    .container{
+        max-width: 1800px;
+        background: red;
+    }
+}
+
 .show {
     width: 200px;
     height: 200px;
@@ -24,6 +31,8 @@
     transition: transform 1s;
     backface-visibility: hidden;
     transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    visibility: visible;
 }
 
 .hide {
@@ -78,7 +87,7 @@
 }
 
 .container{
-    max-width: 1500px;
+    max-width: 1200px;
     background-color: currentColor;
 }
 

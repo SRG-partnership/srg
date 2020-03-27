@@ -11,10 +11,12 @@ $(document).click(function(event) {
         if (className === "show") {
             console.log("This is Show class");
             div[i].className = "hide";
+            //div[i].style.transform = "rotateY(180deg)";
            
         } else if (className === "hide") {
             console.log("This is Hide class");
             div[i].className = "show";
+            //div[i].style.transform = "rotateY(180deg)";
         }
     }
 
