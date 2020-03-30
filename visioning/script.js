@@ -1,23 +1,28 @@
 $(document).click(function(event) {
 
     var object = $(event.target);
-    var div = object.parent().parent().children();
-    //console.log(div.length);
+    var div = object.parent();
+    console.log(div);
     //object.toggleClass("show");
     //object.toggleClass("hide");
+    
+    div.toggleClass("hide");
+
+    /*
     for (i=0; i<div.length; i++){
         console.log(div[i].className);
         var className = div[i].className;
-        if (className === "show") {
+        if (className === "front") {
             console.log("This is Show class");
             div[i].className = "hide";
             //div[i].style.transform = "rotateY(180deg)";
            
-        } else if (className === "hide") {
+        } else if (className === "back") {
             console.log("This is Hide class");
-            div[i].className = "show";
+            //div[i].className = "show";
             //div[i].style.transform = "rotateY(180deg)";
         }
     }
 
+    */
 });

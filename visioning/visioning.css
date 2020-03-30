@@ -16,7 +16,20 @@
     }
 }
 
+.front {
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
 
+.back {
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
 
 .show {
     width: 200px;
