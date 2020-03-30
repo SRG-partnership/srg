@@ -7,6 +7,7 @@ $(document).click(function(event) {
     //object.toggleClass("hide");
     
     div.toggleClass("hide");
+    div.toggleClass("show");
 
     /*
     for (i=0; i<div.length; i++){
