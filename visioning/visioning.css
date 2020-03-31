@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+img:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 1055px){
     .additional{
         display: none;
