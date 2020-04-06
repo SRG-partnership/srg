@@ -95,6 +95,16 @@ img:hover {
 
 }
 
+.button{
+    position: absolute;
+    width: 90%;
+}
+
+.btnWrapper{
+    display: flex;
+    justify-content: center;
+}
+
 .additional {
     position: absolute;
     width: 200px;
