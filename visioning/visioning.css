@@ -20,6 +20,10 @@ img:hover {
     .d-xl-block{
         display: none;
     }
+
+    .button{
+        height: 15%;
+    }
 }
 
 .front {
