@@ -13,6 +13,26 @@ $(document).click(function(event) {
 //        div.toggleClass("show");
 //    }
 
+    if(className === "show" || className === "hide"){
+        var a =list.indexOf(id);
+        if (a>-1){
+            list.splice(a,1);
+            
+                div.toggleClass("hide");
+                div.toggleClass("show");
+            
+        }else{
+            if(list.length === 10){
+                alert('Please keep your selection to 10 cards.\nChoose only the most important features of your new office.');
+            }else{
+                list.push(id);
+                    div.toggleClass("hide");
+                    div.toggleClass("show");
+                
+            }
+        }
+    }
+    /*
     var a =list.indexOf(id);
     if (a>-1){
         list.splice(a,1);
@@ -31,6 +51,7 @@ $(document).click(function(event) {
             }
         }
     }
+    */
     console.log(list.length);
     console.log(list);
 });
