@@ -22,7 +22,12 @@ img:hover {
     }
 
     .button{
-        height: 15%;
+        height: 8%;
+    }
+
+    .front:hover {
+        filter: brightness(1);
+        opacity: 1;
     }
 }
 
