@@ -54,9 +54,6 @@ img:hover {
     position: absolute;
     transform: rotateY(0deg);
     transition: transform 1s;
-    /* backface-visibility: hidden;
-    transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden; */
     visibility: visible;
     transform-style: preserve-3d;
 }
@@ -113,6 +110,7 @@ img:hover {
     width: 180px;
     text-align: -moz-center;
     text-align: center;
+    text-align: -webkit-center;
 }
 
 .whiteText:hover {

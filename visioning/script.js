@@ -8,11 +8,6 @@ $(document).click(function(event) {
     var id = div[0].id;
     var className = div[0].className;
 
-//    if (className === "show" || className == "hide"){
-//        div.toggleClass("hide");
-//        div.toggleClass("show");
-//    }
-
     if(className === "show" || className === "hide"){
         var a =list.indexOf(id);
         if (a>-1){
@@ -32,26 +27,7 @@ $(document).click(function(event) {
             }
         }
     }
-    /*
-    var a =list.indexOf(id);
-    if (a>-1){
-        list.splice(a,1);
-        if(className === "show" || className === "hide"){
-            div.toggleClass("hide");
-            div.toggleClass("show");
-        }
-    }else{
-        if(list.length === 10){
-            alert('Please keep your selection to 10 cards.\nChoose only the most important features of your future office.');
-        }else{
-            list.push(id);
-            if(className === "show" || className === "hide"){
-                div.toggleClass("hide");
-                div.toggleClass("show");
-            }
-        }
-    }
-    */
+
     console.log(list.length);
     console.log(list);
 });
