@@ -61,6 +61,11 @@ img:hover {
     transform-style: preserve-3d;
 }
 
+.front:hover {
+    filter: brightness(0.5);
+    opacity: 0.25;
+}
+
 .hide {
     position: absolute;
     width: 200px;
@@ -96,6 +101,37 @@ img:hover {
     display: flex;
 
 }
+
+.whiteText {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    visibility: visible;
+    width: 180px;
+}
+
+.whiteText:hover {
+    visibility: hidden;
+}
+
+.text {
+    position: absolute;
+    color: teal;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transform: rotateY(0deg);
+    transition: transform 1s;
+    /* backface-visibility: hidden;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden; */
+    visibility: visible;
+    transform-style: preserve-3d;
+}
+
 
 .button{
     position: absolute;
