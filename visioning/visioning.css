@@ -111,6 +111,7 @@ img:hover {
     z-index: 5;
     visibility: visible;
     width: 180px;
+    text-align: -moz-center;
 }
 
 .whiteText:hover {
