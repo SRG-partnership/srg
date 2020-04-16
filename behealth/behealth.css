@@ -69,7 +69,7 @@ img:hover {
 
 .front:hover {
     filter: brightness(0.5);
-    opacity: 0.15; 
+    opacity: 0.1; 
 }
 
 .hide {
