@@ -35,5 +35,5 @@ $(document).click(function(event) {
 function send() {
     console.log("We're sending!" + list);
     alert('Would you like to send your visioning board to SRG?');
-     document.location.href = "mailto:mtalbot@srgpartnership.com?cc=skelsey@srgpartnership.com&subject=SRG Visioning&body=Thank you for completing the excercise.%0D%0A%0D%0APlease provide further comments and/or any additional project priorities in the body of this email as necessary.%0D%0A%0D%0A"+ list +"%0D%0A%0D%0ABest Regards%0D";
+     document.location.href = "mailto:mtalbot@srgpartnership.com?cc=skelsey@srgpartnership.com&subject=SRG Visioning&body=Thank you for completing the exercise.%0D%0A%0D%0APlease provide further comments and/or any additional project priorities in the body of this email as necessary.%0D%0A%0D%0A"+ list +"%0D%0A%0D%0ABest Regards%0D";
 }
