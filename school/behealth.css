@@ -1,0 +1,191 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 1055px){
+    .additional{
+        display: none;
+    }
+
+    .d-xl-block{
+        display: none;
+    }
+
+    .button{
+        height: 8%;
+    }
+
+    .front:hover {
+        filter: brightness(1);
+        opacity: 1;
+    }
+}
+
+.front {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotate(0deg);
+    transition: transform 1s;
+    z-index: 10;
+}
+
+.back {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    backface-visibility: hidden; 
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    z-index: 10;
+}
+
+.show {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transform: rotateY(0deg);
+    transition: transform 1s;
+    visibility: visible;
+    transform-style: preserve-3d;
+}
+
+.front:hover {
+    filter: brightness(0.5);
+    opacity: 0.1; 
+}
+
+.hide {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    /*
+    -webkit-backface-visibility: hidden;
+    */
+    transition: transform 1s;
+    transform: rotateY(180deg);
+    /* backface-visibility: hidden; */
+    transform-style: preserve-3d;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+}
+
+.col{
+    padding: 1px;
+    flex-grow: 0;
+    flex-basis: 200px;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    perspective: 1000px
+}
+
+.row{
+    align-content: center;
+    padding: 3px;
+    justify-content: center;
+    display: flex;
+
+}
+
+.whiteText {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backface-visibility: hidden; 
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    z-index: 5;
+    visibility: visible;
+    width: 180px;
+    text-align: -moz-center;
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.whiteText:hover {
+    visibility: hidden;
+}
+
+.text {
+    position: absolute;
+    color: teal;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transform: rotateY(0deg);
+    transition: transform 1s;
+    /* backface-visibility: hidden;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden; */
+    visibility: visible;
+    transform-style: preserve-3d;
+}
+
+
+.button{
+    position: absolute;
+    width: 90%;
+    background-color: #f14c38;
+    border: none;
+    color: white;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.btnWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.additional {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: orangered;
+}
+
+.d-xl-block {
+    padding: 1px;
+    flex-grow: 0;
+    flex-basis: 200px;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    perspective: 1000px
+}
+
+.container{
+    max-width: 1800px;
+    background-color: #333333;
+}
+
+.body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
