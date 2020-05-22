@@ -18,7 +18,7 @@ $(document).click(function(event) {
             
         }else{
             if(list.length === 10){
-                alert('Please keep your selection to 10 cards.\nChoose only the most important features of your new building.');
+                alert('Please keep your selection to 10 cards.\nChoose only the most important features of your new office.');
             }else{
                 list.push(id);
                     div.toggleClass("hide");
@@ -34,6 +34,6 @@ $(document).click(function(event) {
 
 function send() {
     console.log("We're sending!" + list);
-    alert('Would you like to send your visioning board to SRG?');
-     document.location.href = "mailto:mtalbot@srgpartnership.com?cc=skelsey@srgpartnership.com&subject=SRG Visioning&body=Thank you for completing the exercise.%0D%0A%0D%0APlease provide further comments and/or any additional project priorities in the body of this email as necessary.%0D%0A%0D%0A"+ list +"%0D%0A%0D%0ABest Regards%0D";
+    alert('Do you want to send your target selection to SRG?');
+     document.location.href = "mailto:kryadchenko@srgpartnership.com?cc=mtalbot@srgpartnership.com&subject=SRG Visioning&body=Please receive my Visioning response%0D%0A"+ list +"%0D%0ABest Regards%0D";
 }
