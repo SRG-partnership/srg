@@ -35,5 +35,5 @@ $(document).click(function(event) {
 function send() {
     console.log("We're sending!" + list);
     alert('Do you want to send your target selection to SRG?');
-     document.location.href = "mailto:kryadchenko@srgpartnership.com?cc=mtalbot@srgpartnership.com&subject=SRG Visioning&body=Please receive my Visioning response%0D%0A"+ list +"%0D%0ABest Regards%0D";
+     document.location.href = "mailto:ikrueger@srgpartnership.com?cc=mfigueroa@srgpartnership.com&subject=SRG Visioning&body=Thank you for completing the exercise.%0D%0A%0D%0APlease provide further comments and/or any additional project priorities in the body of this email as necessary.%0D%0A"+ list +"%0D%0ABest Regards%0D";
 }
