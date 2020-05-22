@@ -18,7 +18,7 @@ $(document).click(function(event) {
             
         }else{
             if(list.length === 10){
-                alert('Please keep your selection to 10 cards.\nChoose only the most important features of your new office.');
+                alert('Please keep your selection to 10 cards.\nChoose only the most important features of your new building.');
             }else{
                 list.push(id);
                     div.toggleClass("hide");
